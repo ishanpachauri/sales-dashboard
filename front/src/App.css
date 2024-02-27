@@ -1,0 +1,193 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main-content {
+	flex-grow: 1;
+	padding: 16px 17px 0px 15px;
+}
+
+.app {
+  display: flex;
+}
+
+.header-in {
+	justify-content: center;
+	align-items: baseline;
+	padding: 15px 18px;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background: #0C6470;
+  text-decoration: #fdefed;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	/* background-color: #fff; */
+	height: 100%;
+}
+
+.header-in .sele-policy-img {
+	width: 170px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.avatar_div {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.avatar {
+	margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  float: right;
+}
+
+.sidebar.active ~ .main-content {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar #btn1 {
+  position: relative;
+  top: .4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+.sidebar.active #btn1 {
+  left: 90%;
+}
+
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+
+.sidebar ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	max-height: 50px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #737373;
+}
+
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+
+.sidebar .nav-item {
+  opacity: 0;
+}
+
+.sidebar.active .nav-item {
+  opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: .6rem;
+  padding: .4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+
+/* .sidebar ul li a:hover .tooltip {
+  opacity: 1;
+} */
+
+
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+
+.top {
+  color : #ffffff;
+}
+
+.top i {
+  margin: 8px;
+  cursor: pointer;
+}
+
+.sidebar {
+	width: 78px;
+	background-color: #4A4A4A;
+	color: white;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.sidebar-div {
+  height: 100%;
+}
+
+.MuiGrid-root.MuiGrid-container.css-1xzqqmo-MuiGrid-root {
+	margin-bottom: 0 !important;
+}
+
+.grid_box .Gridbox{
+    /* height: 90%; */
+    /* overflow: auto; */
+    height: 386px !important;
+    overflow: scroll;
+}
+
+.grid_box.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-md-6.css-1fyyp8j-MuiGrid-root {
+  height: 386px !important;
+  overflow: scroll;
+}
+
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-md-4.css-1lj5egr-MuiGrid-root {
+	height: 398px !important;
+	overflow: scroll;
+}
+
+.grid_box.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-bhp9pd-MuiPaper-root-MuiCard-root {
+	height: 366px !important;
+	overflow: scroll;
+}
+
+.side-bar-icon {
+  margin: 8px;
+}
